@@ -1,0 +1,22 @@
+﻿{
+  "Framework": "jasmine",
+  "CodeCoverageIncludes": [ "*.ctrl.ts", "*.mdl.ts", "*.srv.ts" ],
+  "CodeCoverageExecutionMode": "Manual",
+  "Tests": [
+    { "Includes": [ "*.spec.ts" ] }
+  ],
+
+  "References": [
+    { "Path": "../Scripts/angular.js" },
+    { "Path": "../Scripts/angular-messages.js" },
+    { "Path": "../Scripts/angular-ui-router.js" },
+    { "Path": "../Scripts/angular-toastr.js" },
+    { "Path": "../Scripts/angular-mocks.js" },
+    { "Includes": [ "*.mdl.ts", "*.ctrl.ts", "*.srv.ts" ] }
+  ],
+  "Compile": {
+    "Mode": "External",
+    "Extensions": [ ".ts" ],
+    "ExtensionsWithNoOutput": [ ".d.ts" ]
+  }
+}

@@ -1,0 +1,26 @@
+﻿<div class="row">
+    <div class="col-sm-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span>
+                    Search
+                </span>
+                <span style="float: right;">
+                    <button class="btn btn-link arrow-button">
+                        <span id="arrow" class="glyphicon glyphicon-chevron-down"></span>
+                    </button>
+                </span>
+            </div>
+            <div class="panel-body">
+                <form>
+                    <ng-transclude></ng-transclude>
+                    <span class="clearfix"></span>
+                    <div class="form-group button-bar">
+                        <button class="btn btn-primary" ng-click="vm.filter()">Filter</button>
+                        <button class="btn btn-default" ng-click="vm.reset()">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

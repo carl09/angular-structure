@@ -1,0 +1,37 @@
+﻿<style>
+    ng-message {
+        color: red;
+    }
+</style>
+<h2>Student Edit</h2>
+<form name="studentForm">
+    <div class="form-group" ng-class="{ 'has-error' : studentForm.studentCode.$invalid}">
+        <label for="studentCode">Student Code</label>
+        <input type="text" class="form-control" name="studentCode" placeholder="Student Code" autocomplete="off" autofocus ng-model="vm.student.studentCode" required ng-minlength="5" ng-maxlength="10" student-Code-Validator="{{vm.studentId}}">
+        <ng-messages for="studentForm.studentCode.$error" role="alert">
+            <div ng-messages-include="/app/widgets/error-messages.html"></div>
+            <ng-message when="checking">Checking Student Code...</ng-message>
+            <ng-message when="inUse">Student Code is in use</ng-message>
+        </ng-messages>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : studentForm.firstName.$invalid}">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" name="firstName" placeholder="First Name" autocomplete="off" ng-model="vm.student.firstName" required ng-minlength="5" ng-maxlength="50">
+        <ng-messages for="studentForm.firstName.$error" role="alert">
+            <div ng-messages-include="/app/widgets/error-messages.html"></div>
+        </ng-messages>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : studentForm.lastName.$invalid}">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" name="lastName" placeholder="Last Name" autocomplete="off" ng-model="vm.student.lastName" required ng-minlength="5" ng-maxlength="50">
+        <ng-messages for="studentForm.lastName.$error" role="alert">
+            <ng-message when="minlength">WHY!!!</ng-message>
+            <div ng-messages-include="/app/widgets/error-messages.html"></div>
+        </ng-messages>
+    </div>
+
+    <pre ng-show="studentForm.studentCode.$invalid">studentForm.studentCode.$error = {{ studentForm.studentCode.$error | json }}</pre>
+    
+    <button type="submit" class="btn btn-primary" ng-disabled="studentForm.$invalid" ng-click="vm.save()">Save</button>
+    <a class="btn btn-default" href="#/students" ng-click="vm.send()">Cancel</a>
+</form>
