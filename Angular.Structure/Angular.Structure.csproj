@@ -223,10 +223,13 @@
     <TypeScriptCompile Include="app\main\about\about.ctrl.ts" />
     <TypeScriptCompile Include="app\main\contact\contact.ctrl.ts" />
     <TypeScriptCompile Include="app\main\contact\contact.srv.ts" />
+    <TypeScriptCompile Include="app\main\contact\contact.spec.ts" />
     <TypeScriptCompile Include="app\main\home\home.ctrl.ts" />
     <TypeScriptCompile Include="app\main\main.d.ts" />
     <TypeScriptCompile Include="app\main\main.mdl.ts" />
     <TypeScriptCompile Include="app\main\main.spec.ts" />
+    <TypeScriptCompile Include="app\student\student.d.ts" />
+    <TypeScriptCompile Include="app\student\student.spec.ts" />
     <TypeScriptCompile Include="app\student\student-edit\student-code-validator\student-code-validator.drv.ts" />
     <TypeScriptCompile Include="app\student\student-edit\student-edit.ctrl.ts" />
     <TypeScriptCompile Include="app\student\student-edit\student-edit.srv.ts" />

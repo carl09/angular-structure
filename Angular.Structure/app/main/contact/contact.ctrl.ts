@@ -1,7 +1,7 @@
 ﻿module App.Main {
     "use strict";
 
-    class ContactController {
+    export class ContactController {
         static $inject = ["$log", "app.main.contactService", "toastr"];
 
         name: string = "";
@@ -12,7 +12,7 @@
             $log.debug("Opened Contact Controller");
         }
 
-        send() : void {
+        send(): void {
             this.contactService.sendMessage(this.name, this.email, this.message).then(resp => {
                 this.$log.debug(resp);
                 this.toastr.success("Message Sent");

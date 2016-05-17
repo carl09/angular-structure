@@ -32,15 +32,6 @@ describe('Main Module', () => {
         expect($state.current.name).toBe("home");
     });
 
-    //it('Open Edit Page From Url', () => {
-    //    $location.url("/product/edit/15");
-
-    //    $rootScope.$digest();
-
-    //    expect($state.current.name).toBe("product-edit");
-    //    expect($state.params["id"]).toBe("15");
-    //});
-
     it('Open About Page From State', () => {
         $state.go("about");
         $rootScope.$digest();

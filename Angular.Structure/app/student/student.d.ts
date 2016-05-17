@@ -4,6 +4,5 @@
 /// <reference path="../../Scripts/typings/angular-ui-router/angular-ui-router.d.ts" />
 /// <reference path="../../Scripts/typings/angularjs/angular-mocks.d.ts" />
 /// <reference path="../../Scripts/typings/angular-toaster/angular-toastr.d.ts" />
-/// <reference path="main.mdl.ts" />
-/// <reference path="contact/contact.srv.ts" />
-/// <reference path="contact/contact.ctrl.ts" />
+/// <reference path="../../Scripts/typings/kendo.all.d.ts"/>
+/// <reference path="student.mdl.ts" />
